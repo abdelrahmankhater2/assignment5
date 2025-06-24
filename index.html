@@ -1,0 +1,373 @@
+<!--  index.html  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdelrahman Khater – Software Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Canvas Container for 3D Globe -->
+    <div id="canvas-container">
+        <canvas id="three-canvas"></canvas>
+    </div>
+
+    <!-- Starfield for other pages -->
+    <div class="starfield" id="starfield"></div>
+
+    <header></header>
+
+       <!-- HOME PAGE -->
+    <main class="page page-home active" id="home-page">
+        <div class="landing-hero">
+            <div class="hero-content-wrapper">
+                <div class="hero-text">
+                    <h1 class="animated-name">
+                        <span>A</span><span>b</span><span>d</span><span>e</span><span>l</span><span>r</span><span>a</span><span>h</span><span>m</span><span>a</span><span>n</span>
+                        <span> </span>
+                        <span>K</span><span>h</span><span>a</span><span>t</span><span>e</span><span>r</span>
+                    </h1>
+                    <p id="job-title-typed-container">
+                        <span id="job-title-typed"></span>
+                        <span class="typed-cursor"></span>
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/clean.jpg" alt="Abdelrahman Khater">
+                </div>
+            </div>
+            
+            <div class="tech-stack-icons">
+                <ul>
+                    <li><a href="#" title="TypeScript" aria-label="TypeScript">
+                        <img src="images/bXWKvWMIqW-300.jpeg" alt="TypeScript" width="48" height="48">
+                        <span class="tech-tooltip">TypeScript</span>
+                    </a></li>
+                    <li><a href="#" title="Node.js" aria-label="Node.js">
+                        <img src="images/L-DAsVHI8H-300.jpeg" alt="Node.js" width="48" height="48">
+                        <span class="tech-tooltip">Node.js</span>
+                    </a></li>
+                    <li><a href="#" title="NestJS" aria-label="NestJS">
+                        <img src="images/OLEOhkr0E2-300.jpeg" alt="NestJS" width="48" height="48">
+                        <span class="tech-tooltip">NestJS</span>
+                    </a></li>
+                    <li><a href="#" title="Redis" aria-label="Redis">
+                        <img src="images/vUZ4HUsLBA-300.jpeg" alt="Redis" width="48" height="48">
+                        <span class="tech-tooltip">Redis</span>
+                    </a></li>
+                    <li><a href="#" title="PostgreSQL" aria-label="PostgreSQL">
+                        <img src="images/erhkaBf5tM-300.jpeg" alt="PostgreSQL" width="48" height="48">
+                        <span class="tech-tooltip">PostgreSQL</span>
+                    </a></li>
+                    <li><a href="#" title="Docker" aria-label="Docker">
+                        <img src="images/aJOwaXli_g-300.jpeg" alt="Docker" width="48" height="48">
+                        <span class="tech-tooltip">Docker</span>
+                    </a></li>
+                    <li><a href="#" title="AWS" aria-label="AWS">
+                        <img src="images/EYmLSdbcax-300.jpeg" alt="AWS" width="48" height="48">
+                        <span class="tech-tooltip">AWS</span>
+                    </a></li>
+                    <li><a href="#" title="Python" aria-label="Python">
+                        <img src="images/ZVaM5Cy4Kk-300.jpeg" alt="Python" width="48" height="48">
+                        <span class="tech-tooltip">Python</span>
+                    </a></li>
+                    <li><a href="#" title="React" aria-label="React">
+                        <img src="images/fPy2fbH0k2-300.jpeg" alt="React" width="48" height="48">
+                        <span class="tech-tooltip">React</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- ABOUT PAGE -->
+    <main class="page" id="about-page">
+        <div class="page-content">
+            <h1 class="page-title">About Me</h1>
+            
+<div class="content-section">
+                <h2>Background</h2>
+                <div class="collapsible-content">
+                    <h3 class="degree">Want to know a little bit about me?</h3>
+                    <div class="about-flex">
+                        <img src="images/myself.png" alt="Portrait of me" class="profile-photo" />
+                        <p>
+                            My name is Abdelrahman Khater. I've followed the classic "gifted kid" arc. I grew up in a working-class family in Cairo, Egypt, was top of my class for years, and eventually made it into a top-tier, ultra-competitive high school (STEM Schools), which led to an even more intense, prestige-packed college experience at NYU. Along the way, I hit plenty of walls and started to realize that traits like perfectionism and chasing external validation — things I thought defined me — were actually just early programming. I've been untangling that ever since.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Education</h2>
+                <div class="collapsible-content">
+                    <div class="education-flex">
+                        <div class="education-content">
+                            <h3 class="degree">B.S. in Computer Science & Philosophy, New York University</h3>
+                            <p class="date">2021 – 2025</p>
+                            <ul class="education-details">
+                                <li>Major in Computer Science with minors in Interactive Media and Philosophy.</li>
+                                <li>Coursework in algorithms, ethics of AI, and formal logic.</li>
+                                <li>Active member of the ACM and Philosophy Club at NYU.</li>
+                            </ul>
+                        </div>
+                        <img src="images/nyu.png" alt="NYU Shield" class="education-image" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Skills & Interests</h2>
+                <div class="collapsible-content">
+                    <ul>
+                        <li><strong>Tech & Development:</strong> Full-stack engineering, modern web technologies, cloud architecture, open-source contributions.</li>
+                        <li><strong>Design:</strong> UI/UX exploration, prototyping ideas, obsessing over type and layout.</li>
+                        <li><strong>Writing:</strong> Journaling, essays, and longform notes on code, creativity, and life.</li>
+                        <li><strong>Reading:</strong> Everything from political theory and philosophy to tech blogs and fiction.</li>
+                        <li><strong>Politics:</strong> Passionate observer, occasional debater, always curious about systems.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PROJECTS PAGE -->
+    <main class="page" id="projects-page">
+        <div class="page-content">
+            <h1 class="page-title">Projects</h1>        
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/lovefreq.png" alt="Project One Thumbnail" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-thumbnail-placeholder" style="display: none;">🚀</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LoveFreq Web Radio Interface</h3>
+                        <div class="project-details">
+                            <p>A full-stack e-commerce solution with real-time inventory management, payment processing, and admin dashboard. Built with modern technologies for scalability and performance.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                               <a href="https://abdelrahmankhater2.github.io/lovefreq/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/teleport.png" alt="Project Two Thumbnail" onerror="this.style.display='none'; this.parentNode.querySelector('.project-thumbnail-placeholder').style.display='block';">
+                        <div class="project-thumbnail-placeholder" style="display: none;">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Teleportation Glasses Interactive 3D Experience</h3>
+                        <div class="project-details">
+                            <p>An immersive browser demo featuring a detailed Three.js-powered 3D "teleportation glasses" model with dynamic environment presets, sound-driven teleport effects, and a branching video adventure overlay. </p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript </span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://mha9507.github.io/Assignment-4/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/tenminutes.png" alt="Project Three Thumbnail" onerror="this.style.display='none'; this.parentNode.querySelector('.project-thumbnail-placeholder').style.display='block';">
+                        <div class="project-thumbnail-placeholder" style="display: none;">☁️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ten Minutes – Living Comic</h3>
+                        <div class="project-details">
+                            <p>An interactive 10-minute web comic where your choices steer the story and rack up a hidden stress meter. Features a cinematic loading screen, animated panel transitions, branching decision points, ambient and effect sounds, plus a replay prompt to explore alternate paths.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                               <a href="https://mahlet333.github.io/10minss/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="images/wingsofbrotherhood.png" alt="Project Four Thumbnail" onerror="this.style.display='none'; this.parentNode.querySelector('.project-thumbnail-placeholder').style.display='block';">
+                        <div class="project-thumbnail-placeholder" style="display: none;">🔧</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Wings of Brotherhood | Interactive Film Experience</h3>
+                        <div class="project-details">
+                            <p>A one-page cinematic journey with custom cursor trails, scrolling bird animations, embedded video playback, scroll-driven story timelines, hover-flip cast cards, and a dynamic experience showcase.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://abdelrahmankhater2.github.io/CommLabAss1/" class="project-link" target="_blank" rel="noopener">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ARTWORK PAGE -->
+    <main class="page" id="artwork-page">
+        <div class="page-content">
+            <h1 class="page-title">Artwork</h1>
+            
+            <div class="masonry-grid">
+                <div class="artwork-item tall">
+                    <img src="images/1.png" alt="Artwork 1" class="artwork-image">
+                </div>
+                <div class="artwork-item wide">
+                    <img src="images/2.png" alt="Artwork 2" class="artwork-image">
+                </div>
+                <div class="artwork-item square">
+                    <img src="images/3.png" alt="Artwork 3" class="artwork-image">
+                </div>
+                <div class="artwork-item square">
+                    <img src="images/4.png" alt="Artwork 4" class="artwork-image">
+                </div>
+                <div class="artwork-item tall">
+                    <img src="images/5.png" alt="Artwork 5" class="artwork-image">
+                </div>
+                <div class="artwork-item wide">
+                    <img src="images/6.jpg" alt="Artwork 6" class="artwork-image">
+                </div>
+                <div class="artwork-item square">
+                    <img src="images/7.png" alt="Artwork 7" class="artwork-image">
+                </div>
+                <div class="artwork-item tall">
+                    <img src="images/8.png" alt="Artwork 8" class="artwork-image">
+                </div>
+                <div class="artwork-item square">
+                    <img src="images/9.png" alt="Artwork 9" class="artwork-image">
+                </div>
+                <div class="artwork-item wide">
+                    <img src="images/10.png" alt="Artwork 10" class="artwork-image">
+                </div>
+                <div class="artwork-item square">
+                    <img src="images/11.png" alt="Artwork 11" class="artwork-image">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- CONTACT PAGE -->
+    <main class="page" id="contact-page">
+        <div class="page-content">
+            <h1 class="page-title">Let's Connect</h1>
+            
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                    </div>
+                    <div class="terminal-title">contact@abdelrahman-khater.dev</div>
+                </div>
+                
+                <div class="terminal-body" id="terminal">
+                    <div class="terminal-output" id="terminal-output">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">visitor@portfolio:~$</span>
+                            <span class="terminal-text">welcome</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-text">Welcome to Abdelrahman's contact terminal!</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-text">Type 'help' to see available commands, or click on the suggested commands below.</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">visitor@portfolio:~$</span>
+                            <span class="terminal-cursor" id="terminal-cursor">_</span>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-input-container">
+                        <span class="terminal-prompt">visitor@portfolio:~$</span>
+                        <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off" spellcheck="false" placeholder="Type a command... (try 'help')">
+                    </div>
+                    
+                    <div class="terminal-suggestions">
+                        <button class="terminal-suggestion" data-command="help">help</button>
+                        <button class="terminal-suggestion" data-command="contact">contact</button>
+                        <button class="terminal-suggestion" data-command="email">email</button>
+                        <button class="terminal-suggestion" data-command="linkedin">linkedin</button>
+                        <button class="terminal-suggestion" data-command="github">github</button>
+                        <button class="terminal-suggestion" data-command="clear">clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <nav class="sticky-bottom-nav">
+        <ul>
+            <li><a href="#" data-page="home" class="nav-link active" title="Home" aria-label="Home">
+                <img id="home-icon-img" src="images/home.png" alt="Home">
+                <span class="nav-tooltip">Home</span>
+            </a></li>
+            <li><a href="#" data-page="about" class="nav-link" title="About" aria-label="About">
+                <img id="about-icon-img" src="images/me.png" alt="About">
+                <span class="nav-tooltip">About</span>
+            </a></li>
+            <li><a href="#" data-page="projects" class="nav-link" title="Projects" aria-label="Projects">
+                <img id="projects-icon-img" src="images/projects.png" alt="Projects">
+                <span class="nav-tooltip">Projects</span>
+            </a></li>
+            <li><a href="#" data-page="artwork" class="nav-link" title="Artwork" aria-label="Artwork">
+                <img id="artwork-icon-img" src="images/blog.png" alt="Artwork">
+                <span class="nav-tooltip">Artwork</span>
+            </a></li>
+            <li><a href="#" data-page="contact" class="nav-link" title="Contact" aria-label="Contact">
+                <img id="contact-icon-img" src="images/contact.png" alt="Contact">
+                <span class="nav-tooltip">Contact</span>
+            </a></li>
+        </ul>
+    </nav>
+
+    <div id="spotlight-overlay"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Your custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
